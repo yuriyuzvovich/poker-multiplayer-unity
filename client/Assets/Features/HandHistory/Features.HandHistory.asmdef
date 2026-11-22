@@ -1,0 +1,26 @@
+{
+  "name": "Features.HandHistory",
+  "rootNamespace": "Poker.Client.Features.HandHistory",
+  "references": [
+    "Infrastructure.Core",
+    "Infrastructure.Network",
+    "Infrastructure.UI",
+    "Features.Table",
+    "UniTask",
+    "UnityEngine.UI",
+    "Unity.TextMeshPro",
+    "VContainer"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "Newtonsoft.Json.dll",
+    "Poker.Shared.dll"
+  ],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

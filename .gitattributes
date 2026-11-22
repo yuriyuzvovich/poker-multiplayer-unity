@@ -1,0 +1,16 @@
+* text=auto eol=lf
+*.sln text eol=crlf
+*.dll binary
+*.png binary
+*.jpg binary
+*.psd binary
+*.ttf binary
+*.otf binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.fbx binary
+*.asset text eol=lf
+*.unity text eol=lf
+*.prefab text eol=lf
+*.meta text eol=lf

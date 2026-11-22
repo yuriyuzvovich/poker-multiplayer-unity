@@ -1,0 +1,4 @@
+<!-- Stops MSBuild from inheriting the repository's Directory.Build.props (nullable, warnings as errors) into the
+     Unity-generated projects, so building client.sln in an IDE matches how Unity compiles. -->
+<Project>
+</Project>

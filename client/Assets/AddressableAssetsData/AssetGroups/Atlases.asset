@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Atlases
+  m_EditorClassIdentifier: 
+  m_GroupName: Atlases
+  m_GUID: fb8de4c0264c00143938412b57ffb186
+  m_SerializeEntries:
+  - m_GUID: 19607acf585b1c24e9d4e31381b5f6a6
+    m_Address: atlas/table
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ab7a578e8914dfa4da914be4c237dac0
+    m_Address: atlas/cards
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5fb9ef827142994c98436bf06b7d6a9
+    m_Address: atlas/skin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0cd6933e18e2d4849983d87b6767fccd, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 303eafd4e407135428a11dd4ea7ae18c, type: 2}
+    - {fileID: 11400000, guid: e0c2a4f378577184e98a2dd811995814, type: 2}

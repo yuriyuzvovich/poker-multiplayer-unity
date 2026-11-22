@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UI
+  m_EditorClassIdentifier: 
+  m_GroupName: UI
+  m_GUID: 8aadae9d39a7d6d45af7f757beea1cc4
+  m_SerializeEntries:
+  - m_GUID: 233304a4981c78a4491f8192b820ef5c
+    m_Address: ui/hand-layer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c8d168e95e82a64281dcd667954d909
+    m_Address: ui/lobby-screen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 471baebdccdf1da449e93b2636353761
+    m_Address: ui/hand-history-popup
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7760a4b7993f7174fbc4cbbc4261f0da
+    m_Address: ui/buy-in-popup
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aed40d889f7d841419eec8453759c5af
+    m_Address: ui/notice-popup
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca19b4b42299ccc48a8f6bb306ffc335
+    m_Address: ui/table-screen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0cd6933e18e2d4849983d87b6767fccd, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 44026b97a0f68e848ae757eed46b9dc7, type: 2}
+    - {fileID: 11400000, guid: aefbc7eb4dbe83745a96f43fe3ca19a4, type: 2}

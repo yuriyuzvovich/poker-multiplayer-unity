@@ -1,0 +1,37 @@
+{
+  "name": "Tests.EditMode",
+  "rootNamespace": "Poker.Client.Tests.EditMode",
+  "references": [
+    "UnityEngine.TestRunner",
+    "UnityEditor.TestRunner",
+    "UniTask",
+    "Infrastructure.Core",
+    "Infrastructure.Network",
+    "Infrastructure.UI",
+    "Features.Table",
+    "Features.Lobby",
+    "Features.Seating",
+    "Features.Hand",
+    "Features.HandHistory",
+    "Features.TurnTimer",
+    "Features.Wallet",
+    "Infrastructure.Diagnostics"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "nunit.framework.dll",
+    "Newtonsoft.Json.dll",
+    "Poker.Shared.dll"
+  ],
+  "autoReferenced": false,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

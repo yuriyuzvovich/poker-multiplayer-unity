@@ -1,0 +1,25 @@
+{
+  "name": "Features.Table",
+  "rootNamespace": "Poker.Client.Features.Table",
+  "references": [
+    "Infrastructure.Core",
+    "Infrastructure.Network",
+    "Infrastructure.UI",
+    "UniTask",
+    "UnityEngine.UI",
+    "Unity.TextMeshPro",
+    "VContainer"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "Newtonsoft.Json.dll",
+    "Poker.Shared.dll"
+  ],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

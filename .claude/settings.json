@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "PowerShell(./tools/test.ps1*)",
+      "PowerShell(& ./tools/test.ps1*)",
+      "Bash(pwsh ./tools/test.ps1*)",
+      "Bash(pwsh -File ./tools/test.ps1*)",
+      "Bash(powershell -File ./tools/test.ps1*)",
+      "PowerShell(./tools/setup.ps1*)",
+      "PowerShell(& ./tools/setup.ps1*)",
+      "Bash(pwsh ./tools/setup.ps1*)",
+      "Bash(pwsh -File ./tools/setup.ps1*)",
+      "Bash(powershell -File ./tools/setup.ps1*)",
+      "PowerShell(./tools/unity-tests.ps1*)",
+      "PowerShell(& ./tools/unity-tests.ps1*)",
+      "Bash(pwsh ./tools/unity-tests.ps1*)",
+      "Bash(pwsh -File ./tools/unity-tests.ps1*)",
+      "Bash(powershell -File ./tools/unity-tests.ps1*)",
+      "PowerShell(./tools/server.ps1 -Background*)",
+      "PowerShell(& ./tools/server.ps1 -Background*)",
+      "Bash(pwsh ./tools/server.ps1 -Background*)",
+      "Bash(pwsh -File ./tools/server.ps1 -Background*)",
+      "Bash(powershell -File ./tools/server.ps1 -Background*)",
+      "PowerShell(dotnet build *)",
+      "PowerShell(dotnet test *)",
+      "Bash(dotnet build *)",
+      "Bash(dotnet test *)",
+      "PowerShell(Get-Process *)",
+      "PowerShell(Get-CimInstance Win32_Process *)",
+      "PowerShell(git status *)",
+      "PowerShell(git diff *)",
+      "PowerShell(git log *)",
+      "PowerShell(git show *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git show *)"
+    ],
+    "deny": [
+      "Edit(client/Library/**)",
+      "Edit(client/Temp/**)",
+      "Edit(**/bin/**)",
+      "Edit(**/obj/**)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard-meta.mjs\"",
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/feature-gate.mjs\"",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/shell-guard.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/check-text.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/session-start.mjs\"",
+            "timeout": 600
+          }
+        ]
+      }
+    ]
+  }
+}

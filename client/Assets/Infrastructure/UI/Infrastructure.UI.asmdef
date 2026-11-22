@@ -1,0 +1,23 @@
+{
+  "name": "Infrastructure.UI",
+  "rootNamespace": "Poker.Client.Infrastructure.UI",
+  "references": [
+    "UniTask",
+    "UniTask.Addressables",
+    "UniTask.DOTween",
+    "DOTween.Modules",
+    "Unity.Addressables",
+    "Unity.ResourceManager",
+    "UnityEngine.UI",
+    "Unity.TextMeshPro"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

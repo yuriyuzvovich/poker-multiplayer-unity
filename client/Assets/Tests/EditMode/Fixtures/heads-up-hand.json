@@ -1,0 +1,691 @@
+{
+  "heroPlayerId": "p-hero",
+  "messages": [
+    {
+      "type": "table.snapshot",
+      "requestId": 1,
+      "payload": {
+        "tableId": "heads-up",
+        "name": "Heads-up",
+        "smallBlind": 50,
+        "bigBlind": 100,
+        "minBuyIn": 2000,
+        "maxBuyIn": 10000,
+        "seats": [
+          {
+            "index": 0,
+            "status": 2,
+            "playerId": "bot-edsger",
+            "playerName": "Edsger",
+            "stack": 5000,
+            "reservedUntilUnixMs": 0,
+            "isSittingOut": false
+          },
+          {
+            "index": 1,
+            "status": 0,
+            "playerId": "",
+            "playerName": "",
+            "stack": 0,
+            "reservedUntilUnixMs": 0,
+            "isSittingOut": false
+          }
+        ]
+      }
+    },
+    {
+      "type": "table.seat_reservation",
+      "requestId": 2,
+      "payload": {
+        "seatIndex": 1,
+        "expiresAtUnixMs": 1767268820000,
+        "minBuyIn": 2000,
+        "maxBuyIn": 10000
+      }
+    },
+    {
+      "type": "table.seat_reserved",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "seat": {
+          "index": 1,
+          "status": 1,
+          "playerId": "p-hero",
+          "playerName": "Hero",
+          "stack": 0,
+          "reservedUntilUnixMs": 1767268820000,
+          "isSittingOut": false
+        }
+      }
+    },
+    {
+      "type": "table.buy_in_accepted",
+      "requestId": 3,
+      "payload": {
+        "seatIndex": 1,
+        "stack": 2000
+      }
+    },
+    {
+      "type": "table.player_seated",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "seat": {
+          "index": 1,
+          "status": 2,
+          "playerId": "p-hero",
+          "playerName": "Hero",
+          "stack": 2000,
+          "reservedUntilUnixMs": 0,
+          "isSittingOut": false
+        }
+      }
+    },
+    {
+      "type": "hand.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "buttonSeat": 0,
+        "smallBlindSeat": 0,
+        "bigBlindSeat": 1,
+        "smallBlind": 50,
+        "bigBlind": 100,
+        "players": [
+          {
+            "seatIndex": 0,
+            "playerId": "bot-edsger",
+            "stack": 4950,
+            "committed": 50,
+            "isFolded": false,
+            "isAllIn": false
+          },
+          {
+            "seatIndex": 1,
+            "playerId": "p-hero",
+            "stack": 1900,
+            "committed": 100,
+            "isFolded": false,
+            "isAllIn": false
+          }
+        ]
+      }
+    },
+    {
+      "type": "hand.hole_cards",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "seatIndex": 1,
+        "cards": [
+          "Ks",
+          "3d"
+        ]
+      }
+    },
+    {
+      "type": "turn.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1001,
+        "seatIndex": 0,
+        "deadlineUnixMs": 1767268817250,
+        "leewayMs": 2000,
+        "toCall": 50,
+        "canCheck": false,
+        "canRaise": true,
+        "minRaiseTo": 200,
+        "maxRaiseTo": 5000
+      }
+    },
+    {
+      "type": "turn.acted",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1001,
+        "seatIndex": 0,
+        "action": 2,
+        "amount": 50,
+        "committed": 100,
+        "stack": 4900,
+        "potTotal": 200,
+        "isAllIn": false,
+        "reason": 0
+      }
+    },
+    {
+      "type": "turn.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1002,
+        "seatIndex": 1,
+        "deadlineUnixMs": 1767268818250,
+        "leewayMs": 2000,
+        "toCall": 0,
+        "canCheck": true,
+        "canRaise": true,
+        "minRaiseTo": 200,
+        "maxRaiseTo": 2000
+      }
+    },
+    {
+      "type": "turn.act_accepted",
+      "requestId": 4,
+      "payload": {
+        "turnId": 1002
+      }
+    },
+    {
+      "type": "turn.acted",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1002,
+        "seatIndex": 1,
+        "action": 1,
+        "amount": 0,
+        "committed": 100,
+        "stack": 1900,
+        "potTotal": 200,
+        "isAllIn": false,
+        "reason": 0
+      }
+    },
+    {
+      "type": "round.ended",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "street": 0,
+        "pots": [
+          {
+            "amount": 200,
+            "eligibleSeats": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "round.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "street": 1,
+        "board": [
+          "Ts",
+          "Jc",
+          "2h"
+        ]
+      }
+    },
+    {
+      "type": "turn.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1003,
+        "seatIndex": 1,
+        "deadlineUnixMs": 1767268818250,
+        "leewayMs": 2000,
+        "toCall": 0,
+        "canCheck": true,
+        "canRaise": true,
+        "minRaiseTo": 100,
+        "maxRaiseTo": 1900
+      }
+    },
+    {
+      "type": "turn.act_accepted",
+      "requestId": 5,
+      "payload": {
+        "turnId": 1003
+      }
+    },
+    {
+      "type": "turn.acted",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1003,
+        "seatIndex": 1,
+        "action": 1,
+        "amount": 0,
+        "committed": 0,
+        "stack": 1900,
+        "potTotal": 200,
+        "isAllIn": false,
+        "reason": 0
+      }
+    },
+    {
+      "type": "turn.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1004,
+        "seatIndex": 0,
+        "deadlineUnixMs": 1767268818250,
+        "leewayMs": 2000,
+        "toCall": 0,
+        "canCheck": true,
+        "canRaise": true,
+        "minRaiseTo": 100,
+        "maxRaiseTo": 4900
+      }
+    },
+    {
+      "type": "turn.acted",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1004,
+        "seatIndex": 0,
+        "action": 3,
+        "amount": 100,
+        "committed": 100,
+        "stack": 4800,
+        "potTotal": 300,
+        "isAllIn": false,
+        "reason": 0
+      }
+    },
+    {
+      "type": "turn.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1005,
+        "seatIndex": 1,
+        "deadlineUnixMs": 1767268819750,
+        "leewayMs": 2000,
+        "toCall": 100,
+        "canCheck": false,
+        "canRaise": true,
+        "minRaiseTo": 200,
+        "maxRaiseTo": 1900
+      }
+    },
+    {
+      "type": "turn.act_accepted",
+      "requestId": 6,
+      "payload": {
+        "turnId": 1005
+      }
+    },
+    {
+      "type": "turn.acted",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1005,
+        "seatIndex": 1,
+        "action": 2,
+        "amount": 100,
+        "committed": 100,
+        "stack": 1800,
+        "potTotal": 400,
+        "isAllIn": false,
+        "reason": 0
+      }
+    },
+    {
+      "type": "round.ended",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "street": 1,
+        "pots": [
+          {
+            "amount": 400,
+            "eligibleSeats": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "round.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "street": 2,
+        "board": [
+          "Ts",
+          "Jc",
+          "2h",
+          "Tc"
+        ]
+      }
+    },
+    {
+      "type": "turn.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1006,
+        "seatIndex": 1,
+        "deadlineUnixMs": 1767268819750,
+        "leewayMs": 2000,
+        "toCall": 0,
+        "canCheck": true,
+        "canRaise": true,
+        "minRaiseTo": 100,
+        "maxRaiseTo": 1800
+      }
+    },
+    {
+      "type": "turn.act_accepted",
+      "requestId": 7,
+      "payload": {
+        "turnId": 1006
+      }
+    },
+    {
+      "type": "turn.acted",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1006,
+        "seatIndex": 1,
+        "action": 1,
+        "amount": 0,
+        "committed": 0,
+        "stack": 1800,
+        "potTotal": 400,
+        "isAllIn": false,
+        "reason": 0
+      }
+    },
+    {
+      "type": "turn.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1007,
+        "seatIndex": 0,
+        "deadlineUnixMs": 1767268819750,
+        "leewayMs": 2000,
+        "toCall": 0,
+        "canCheck": true,
+        "canRaise": true,
+        "minRaiseTo": 100,
+        "maxRaiseTo": 4800
+      }
+    },
+    {
+      "type": "turn.acted",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1007,
+        "seatIndex": 0,
+        "action": 3,
+        "amount": 100,
+        "committed": 100,
+        "stack": 4700,
+        "potTotal": 500,
+        "isAllIn": false,
+        "reason": 0
+      }
+    },
+    {
+      "type": "turn.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1008,
+        "seatIndex": 1,
+        "deadlineUnixMs": 1767268821000,
+        "leewayMs": 2000,
+        "toCall": 100,
+        "canCheck": false,
+        "canRaise": true,
+        "minRaiseTo": 200,
+        "maxRaiseTo": 1800
+      }
+    },
+    {
+      "type": "turn.act_accepted",
+      "requestId": 8,
+      "payload": {
+        "turnId": 1008
+      }
+    },
+    {
+      "type": "turn.acted",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1008,
+        "seatIndex": 1,
+        "action": 2,
+        "amount": 100,
+        "committed": 100,
+        "stack": 1700,
+        "potTotal": 600,
+        "isAllIn": false,
+        "reason": 0
+      }
+    },
+    {
+      "type": "round.ended",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "street": 2,
+        "pots": [
+          {
+            "amount": 600,
+            "eligibleSeats": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "round.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "street": 3,
+        "board": [
+          "Ts",
+          "Jc",
+          "2h",
+          "Tc",
+          "4h"
+        ]
+      }
+    },
+    {
+      "type": "turn.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1009,
+        "seatIndex": 1,
+        "deadlineUnixMs": 1767268821000,
+        "leewayMs": 2000,
+        "toCall": 0,
+        "canCheck": true,
+        "canRaise": true,
+        "minRaiseTo": 100,
+        "maxRaiseTo": 1700
+      }
+    },
+    {
+      "type": "turn.act_accepted",
+      "requestId": 9,
+      "payload": {
+        "turnId": 1009
+      }
+    },
+    {
+      "type": "turn.acted",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1009,
+        "seatIndex": 1,
+        "action": 1,
+        "amount": 0,
+        "committed": 0,
+        "stack": 1700,
+        "potTotal": 600,
+        "isAllIn": false,
+        "reason": 0
+      }
+    },
+    {
+      "type": "turn.started",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1010,
+        "seatIndex": 0,
+        "deadlineUnixMs": 1767268821000,
+        "leewayMs": 2000,
+        "toCall": 0,
+        "canCheck": true,
+        "canRaise": true,
+        "minRaiseTo": 100,
+        "maxRaiseTo": 4700
+      }
+    },
+    {
+      "type": "turn.acted",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "turnId": 1010,
+        "seatIndex": 0,
+        "action": 1,
+        "amount": 0,
+        "committed": 0,
+        "stack": 4700,
+        "potTotal": 600,
+        "isAllIn": false,
+        "reason": 0
+      }
+    },
+    {
+      "type": "round.ended",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "street": 3,
+        "pots": [
+          {
+            "amount": 600,
+            "eligibleSeats": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "hand.showdown",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "board": [
+          "Ts",
+          "Jc",
+          "2h",
+          "Tc",
+          "4h"
+        ],
+        "reveals": [
+          {
+            "seatIndex": 0,
+            "cards": [
+              "7s",
+              "4s"
+            ],
+            "category": 2,
+            "description": "Two pair"
+          },
+          {
+            "seatIndex": 1,
+            "cards": [
+              "Ks",
+              "3d"
+            ],
+            "category": 1,
+            "description": "Pair"
+          }
+        ]
+      }
+    },
+    {
+      "type": "hand.ended",
+      "requestId": 0,
+      "payload": {
+        "tableId": "heads-up",
+        "handNumber": 1,
+        "awards": [
+          {
+            "potIndex": 0,
+            "seatIndex": 0,
+            "amount": 600
+          }
+        ],
+        "stacks": [
+          {
+            "seatIndex": 0,
+            "stack": 5300
+          },
+          {
+            "seatIndex": 1,
+            "stack": 1700
+          }
+        ],
+        "nextHandInMs": 3000
+      }
+    }
+  ]
+}

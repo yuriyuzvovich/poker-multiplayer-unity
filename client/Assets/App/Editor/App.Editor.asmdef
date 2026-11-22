@@ -1,0 +1,30 @@
+{
+  "name": "App.Editor",
+  "rootNamespace": "Poker.Client.App.Editor",
+  "references": [
+    "App.Root",
+    "Features.Table",
+    "Features.Lobby",
+    "Features.Seating",
+    "Features.Hand",
+    "Features.HandHistory",
+    "Infrastructure.UI",
+    "Unity.Addressables",
+    "Unity.Addressables.Editor",
+    "VContainer",
+    "UnityEngine.UI",
+    "Unity.TextMeshPro",
+    "UniTask"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
